@@ -4,8 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Served from https://laineypau.github.io/tommy-dogs/ on GitHub Pages,
-  // so assets must be referenced relative to this subpath, not the domain root.
-  base: '/tommy-dogs/',
+  // Served from the custom domain https://tommydogs.com at the domain root.
+  base: '/',
   plugins: [react(), tailwindcss()],
 })

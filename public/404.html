@@ -8,8 +8,8 @@
       // https://github.com/rafgraph/spa-github-pages
       // Encodes the requested path into a query string and redirects to the
       // app's index.html, which decodes it back (see the snippet in index.html).
-      // pathSegmentsToKeep = 1 keeps the /tommy-dogs/ project base path intact.
-      var pathSegmentsToKeep = 1;
+      // pathSegmentsToKeep = 0 since the site is served from the domain root.
+      var pathSegmentsToKeep = 0;
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
